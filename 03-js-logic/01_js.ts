@@ -82,6 +82,7 @@ const isObject = (value: object): boolean => {
   return typeof value === 'object' && value !== null;
 };
 
+// check
 const auto1 = {
   brand: 'Mazda',
   engine: {
@@ -99,3 +100,10 @@ const auto2 = {
 
 const res = deepEqual(auto1, auto2);
 console.log(res);
+
+console.log(
+  deepEqual(
+    { name: 'test', data: { value: 1 } },
+    { name: 'test', data: { value: 2 } }
+  )
+);
