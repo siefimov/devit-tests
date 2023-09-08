@@ -1,0 +1,34 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation: rotateColor 3s linear infinite;
+}
+
+@keyframes rotateColor {
+  0% {
+    transform: rotate(0deg);
+    background-color: red;
+  }
+  50% {
+    transform: rotate(180deg);
+    background-color: orange;
+  }
+  75% {
+    transform: rotate(270deg);
+    background-color: green;
+  }
+  100% {
+    transform: rotate(360deg);
+    background-color: red;
+  }
+}
