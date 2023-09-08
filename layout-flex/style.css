@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100vh;
+  padding: 10px;
+}
+
+.header,
+.nav,
+.content,
+.sidebar,
+.footer {
+  border: 2px solid black;
+}
+
+.header {
+  padding: 30px 0;
+}
+
+.nav {
+  padding: 5px 0;
+}
+
+.main {
+  display: flex;
+  gap: 10px;
+  flex-grow: 1;
+}
+.content,
+.sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  flex-basis: 70%;
+}
+
+.sidebar {
+  flex-basis: 30%;
+}
+
+.footer {
+  padding: 10px;
+}
+.title {
+  text-align: center;
+  text-transform: uppercase;
+}
