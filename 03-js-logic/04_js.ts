@@ -66,6 +66,7 @@ const arrayToObject = (arr: KeyValuePair[]): object => {
   return objectFromArray;
 };
 
+// cheking
 console.log(
   arrayToObject([
     ['brand', 'Mazda'],
