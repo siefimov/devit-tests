@@ -54,7 +54,7 @@ const deepEqual = (obj1: object, obj2: object): boolean => {
     // почергово отримуємо значення властивостей другого об'єкту
     const value2 = obj2[key];
     // Перевіряємо чи є значення об'єктами
-    const areObjects = isObject(value1) && isObject(value2);
+    const areObjects: boolean = isObject(value1) && isObject(value2);
 
     /* Змінна areObject може мати два значення: true або false.
     Якщо true:
